@@ -1,0 +1,10 @@
+{
+  "name": "simple-messaging-app",
+  "private": true,
+  "workspaces": ["apps/mobile", "apps/server", "packages/protocol"],
+  "scripts": {
+    "dev:server": "npm run dev -w @simple-messenger/server",
+    "dev:mobile": "npm run start -w @simple-messenger/mobile",
+    "typecheck": "npm run typecheck -w @simple-messenger/protocol && npm run typecheck -w @simple-messenger/server && npm run typecheck -w @simple-messenger/mobile"
+  }
+}

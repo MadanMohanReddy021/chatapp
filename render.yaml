@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: simple-messenger-relay
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev
+    startCommand: npm run start -w @simple-messenger/server
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production

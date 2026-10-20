@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "Simple Messenger",
+    "slug": "simple-messenger",
+    "scheme": "simplemessenger",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "web": { "bundler": "metro" },
+    "android": { "package": "app.simplemessenger.client" },
+    "plugins": [
+      "expo-secure-store",
+      "expo-sqlite",
+      "expo-notifications",
+      ["@config-plugins/react-native-webrtc", {
+        "cameraPermission": "Allow Simple Messenger to use your camera for video calls.",
+        "microphonePermission": "Allow Simple Messenger to use your microphone for calls."
+      }]
+    ]
+  }
+}

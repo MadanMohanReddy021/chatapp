@@ -1,0 +1,11 @@
+node_modules/
+.expo/
+dist/
+build/
+coverage/
+.env
+*.db
+*.db-shm
+*.db-wal
+android/
+ios/
